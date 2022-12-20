@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .area {
+            height: 100px;
+        }
+        fieldset {
+            padding: 50px;
+            margin: 10px;
+        }
+        label, input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="server.php">
+        <fieldset>
+            <legend>Contact Page</legend>
+            <label for="firstname">First Name:</label><br>
+            <input type="text" id="firstname" name="firstname" value="" placeholder="John" required><br>
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" name="lastname" value="" placeholder="Doe" required><br>
+            <label for="address">Email:</label><br>
+            <input type="email" id="address" placeholder="example@gmail.com" required><br>
+            <label for="subject">Message:</label><br>
+            <input class="area" type="text" id="subject" placeholder="Tell us more..." required><br>
+            <br>
+            <label for="prioritySelect">Priority:</label>
+            <select name="priority" id="prioritySelect">
+                <option value="Trivial">Trivial</option>
+                <option value="Minor" selected>Minor</option>
+                <option value="Major">Major</option>
+                <option value="Urgent">Urgent</option>
+                <option value="Critical">Critical</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>
